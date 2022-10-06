@@ -8,43 +8,42 @@ using System.Threading.Tasks;
 
 namespace Pizza_Assingnment.Controllers
 {
-    public class PricesController : Controller
+    public class PizzaController : Controller
     {
-        PricesDataAccessLayer PricesDataAccessLayer = null;
-        public PricesController()
+        PizzaDataAccessLayer PizzaDataAccessLayer = null;
+        public PizzaController()
         {
-            PricesDataAccessLayer = new PricesDataAccessLayer();
+            PizzaDataAccessLayer = new PizzaDataAccessLayer();
         }
 
-        // GET: PricesController
+        // GET: PizzaController
         public ActionResult Index()
         {
-            IEnumerable<Prices> prices = PricesDataAccessLayer.GetAllPrices();
-            return View(prices);
+            IEnumerable<Pizza> pizzas = PizzaDataAccessLayer.GetAllPizza();
+            return View(pizzas);
         }
 
-        // GET: PricesController/Details/5
+        // GET: PizzaController/Details/5
         public ActionResult Details(int id)
         {
-            Prices prices = PricesDataAccessLayer.GetPricesData(id);
-            return View(prices);
+            Pizza pizza = PizzaDataAccessLayer.GetPizzaData(id);
+            return View(pizza);
         }
 
-        // GET: PricesController/Create
+        // GET: PizzaController/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: PricesController/Create
+        // POST: PizzaController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Prices prices)
+        public ActionResult Create(Pizza pizza)
         {
             try
             {
-                PricesDataAccessLayer.AddPrice(prices);
-
+                PizzaDataAccessLayer.AddPizza(pizza);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -53,21 +52,21 @@ namespace Pizza_Assingnment.Controllers
             }
         }
 
-        // GET: PricesController/Edit/5
+        // GET: PizzaController/Edit/5
         public ActionResult Edit(int id)
         {
-            Prices prices = PricesDataAccessLayer.GetPricesData(id);
-            return View(prices);
+            Pizza pizza = PizzaDataAccessLayer.GetPizzaData(id);
+            return View();
         }
 
-        // POST: PricesController/Edit/5
+        // POST: PizzaController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(Prices prices)
+        public ActionResult Edit(Pizza pizza)
         {
             try
             {
-                PricesDataAccessLayer.UpdatePrice(prices);
+                PizzaDataAccessLayer.UpdatePizza(pizza);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -76,21 +75,21 @@ namespace Pizza_Assingnment.Controllers
             }
         }
 
-        // GET: PricesController/Delete/5
+        // GET: PizzaController/Delete/5
         public ActionResult Delete(int id)
         {
-            Prices prices = PricesDataAccessLayer.GetPricesData(id);
-            return View(prices);
+            Pizza pizza = PizzaDataAccessLayer.GetPizzaData(id);
+            return View(pizza);
         }
 
-        // POST: PricesController/Delete/5
+        // POST: PizzaController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(Prices prices)
+        public ActionResult Delete(Pizza pizza)
         {
             try
             {
-                PricesDataAccessLayer.DeletePrice(prices.Id);
+                PizzaDataAccessLayer.DeletePizza(pizza.Id);
                 return RedirectToAction(nameof(Index));
             }
             catch
