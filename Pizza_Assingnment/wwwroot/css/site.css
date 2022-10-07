@@ -232,20 +232,40 @@ body {
     height: 90vh;
 }
 .contactBoxForm {
+    display: flex;
+    flex-direction:column;
     background-color: #FFFFFF;
     position: absolute;
-    padding: 2rem;
+    padding-block: 4em;
+    padding-left: 20em;
+    padding-right: 6em;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
 }
 .contactBoxInfo {
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
     background-color: #5C8F22;
     position: absolute;
-    top: 50%;
-    left: 25%;
-    transform: translate(-50%, -25%);
-    padding: 2rem;
+    top: 40%;
+    left: 32%;
+    transform: translate(-40%, -32%);
+    padding: 8rem;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+}
+.contactBoxInfo a{
+    color: #FFF;
+    margin-bottom: 10px;
+}
+textarea {
+    resize: none;
+    margin-bottom: 15px;
+}
+.sendIn {
+    color: #FFFFFF;
+    background-color: #5C8F22;
     box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
 }
