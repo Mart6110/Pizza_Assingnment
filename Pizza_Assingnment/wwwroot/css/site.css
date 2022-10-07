@@ -3,7 +3,7 @@ for details on configuring this project to bundle and minify static web assets. 
 
 * {
     padding: 0;
-    margin 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -84,9 +84,9 @@ button.accept-policy {
   line-height: inherit;
 }
 
-/* ------------------------------------------------
-    Sticky footer styles
--------------------------------------------------- */
+/***************************************************
+                 Sticky footer styles
+****************************************************/
 html {
   position: relative;
   min-height: 100%;
@@ -113,11 +113,19 @@ footer .footer-copyright {
 }
 
 body {
-    /*---------------------------------------------
+    /***********************************************
         Margin bottom by footer height
-___________________________________________________*/
+***************************************************/
     margin-bottom: 60px;
     
+}
+/****************************************************
+                     info box
+*****************************************************/
+#info {
+    border: 1px solid black;
+    margin: 5px;
+    text-align: center;
 }
 .footer {
   position: absolute;
@@ -256,4 +264,51 @@ ___________________________________________________*/
         left: 0;
         bottom: 0%;
     }
+}
+/****************************************************
+                   Contact page
+*****************************************************/
+.contactPage {
+    position: relative;
+    background-color: #FBCB7B;
+    width: 100%;
+    height: 90vh;
+}
+.contactBoxForm {
+    display: flex;
+    flex-direction:column;
+    background-color: #FFFFFF;
+    position: absolute;
+    padding-block: 4em;
+    padding-left: 20em;
+    padding-right: 6em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+}
+.contactBoxInfo {
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    background-color: #5C8F22;
+    position: absolute;
+    top: 40%;
+    left: 32%;
+    transform: translate(-40%, -32%);
+    padding: 8rem;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+}
+.contactBoxInfo a{
+    color: #FFF;
+    margin-bottom: 10px;
+}
+textarea {
+    resize: none;
+    margin-bottom: 15px;
+}
+.sendIn {
+    color: #FFFFFF;
+    background-color: #5C8F22;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
 }
