@@ -7,6 +7,29 @@ for details on configuring this project to bundle and minify static web assets. 
     box-sizing: border-box;
 }
 
+body {
+    margin-bottom: 0 !important;
+}
+
+/* ------------------------------------------------------
+                            Navigation 
+ --------------------------------------------------------*/
+header {
+    background-color: #EB5E30;
+    z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-family: 'Rubik', sans-serif !important;
+}
+
+.navbar {
+    margin-bottom: 0 !important;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
 a.navbar-brand {
   white-space: normal;
   text-align: center;
@@ -68,6 +91,26 @@ html {
   position: relative;
   min-height: 100%;
 }
+/* ------------------------------------------------
+                Footer styles
+-------------------------------------------------- */
+footer {
+    background-color: #EB5E30;
+    color: #000 !important;
+    margin-top: 2rem;
+}
+
+footer .row {
+    padding: 3rem;
+}
+
+footer .row a {
+    color: #000;
+}
+
+footer .footer-copyright {
+    background-color: #fff;
+}
 
 body {
     /*---------------------------------------------
@@ -87,7 +130,7 @@ ___________________________________________________*/
 .slider {
     max-width: 100%;
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
     position: relative;
     overflow: hidden;
 }
