@@ -3,71 +3,73 @@
 @{
     ViewData["Title"] = "Create";
 }
+<section class="createPizza">
+    <h1>Create</h1>
 
-<h1>Create</h1>
-
-<h4>Pizza</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Tomato_Sauce" class="control-label"></label>
-                <input asp-for="Tomato_Sauce" class="form-control" />
-                <span asp-validation-for="Tomato_Sauce" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Cheese" class="control-label"></label>
-                <input asp-for="Cheese" class="form-control" />
-                <span asp-validation-for="Cheese" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Topping_1" class="control-label"></label>
-                <input asp-for="Topping_1" class="form-control" />
-                <span asp-validation-for="Topping_1" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Topping_2" class="control-label"></label>
-                <input asp-for="Topping_2" class="form-control" />
-                <span asp-validation-for="Topping_2" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Topping_3" class="control-label"></label>
-                <input asp-for="Topping_3" class="form-control" />
-                <span asp-validation-for="Topping_3" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Topping_4" class="control-label"></label>
-                <input asp-for="Topping_4" class="form-control" />
-                <span asp-validation-for="Topping_4" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Topping_5" class="control-label"></label>
-                <input asp-for="Topping_5" class="form-control" />
-                <span asp-validation-for="Topping_5" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Price_id" class="control-label"></label>
-                <input asp-for="Price_id" class="form-control" />
-                <span asp-validation-for="Price_id" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+    <h4>Pizza</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Tomato_Sauce" class="control-label"></label>
+                    <input asp-for="Tomato_Sauce" class="form-control" />
+                    <span asp-validation-for="Tomato_Sauce" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Cheese" class="control-label"></label>
+                    <input asp-for="Cheese" class="form-control" />
+                    <span asp-validation-for="Cheese" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Topping_1" class="control-label"></label>
+                    <input asp-for="Topping_1" class="form-control" />
+                    <span asp-validation-for="Topping_1" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Topping_2" class="control-label"></label>
+                    <input asp-for="Topping_2" class="form-control" />
+                    <span asp-validation-for="Topping_2" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Topping_3" class="control-label"></label>
+                    <input asp-for="Topping_3" class="form-control" />
+                    <span asp-validation-for="Topping_3" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Topping_4" class="control-label"></label>
+                    <input asp-for="Topping_4" class="form-control" />
+                    <span asp-validation-for="Topping_4" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Topping_5" class="control-label"></label>
+                    <input asp-for="Topping_5" class="form-control" />
+                    <span asp-validation-for="Topping_5" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Price_id" class="control-label"></label>
+                    <input asp-for="Price_id" class="form-control" />
+                    <span asp-validation-for="Price_id" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-dark" />
+                </div>
+            </form>
+        </div>
     </div>
-</div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+</section>
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }

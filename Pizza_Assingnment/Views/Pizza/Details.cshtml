@@ -3,76 +3,77 @@
 @{
     ViewData["Title"] = "Details";
 }
+<section class="DetailsPizza">
+    <h1>Details</h1>
 
-<h1>Details</h1>
-
-<div>
-    <h4>Pizza</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Id)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Id)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Tomato_Sauce)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Tomato_Sauce)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Cheese)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Cheese)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Topping_1)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Topping_1)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Topping_2)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Topping_2)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Topping_3)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Topping_3)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Topping_4)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Topping_4)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Topping_5)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Topping_5)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Price_id)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Price_id)
-        </dd>
-    </dl>
-</div>
-<div>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-    <a asp-action="Index">Back to List</a>
-</div>
+    <div>
+        <h4>Pizza</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Id)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Id)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Tomato_Sauce)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Tomato_Sauce)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Cheese)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Cheese)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Topping_1)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Topping_1)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Topping_2)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Topping_2)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Topping_3)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Topping_3)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Topping_4)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Topping_4)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Topping_5)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Topping_5)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Price_id)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Price_id)
+            </dd>
+        </dl>
+    </div>
+    <div>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+        <a asp-action="Index">Back to List</a>
+    </div>
+</section>

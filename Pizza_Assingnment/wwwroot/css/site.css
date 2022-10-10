@@ -204,7 +204,7 @@ body {
 
 .content h1 {
     font-family: 'Rubik', sans-serif !important;
-    margin-botom: 5px;
+    margin-bottom: 5px;
 }
 
 /* ================================================= 
@@ -354,4 +354,205 @@ textarea {
     padding: 1rem 2rem;
     border-radius: 25px;
     align-self: center;
+}
+/****************************************
+    styles the view from the drink crud
+*****************************************/
+.createDrink {
+    display: flex;   
+    flex-direction: column;
+    margin-inline: 7rem;
+    margin-block: 5rem;
+}
+.createDrink > * { 
+  justify-content: flex-start;
+}
+.DeleteDrink {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 7rem;
+    margin-block: 5rem;
+}
+.DeleteDrink > * {
+    justify-content: flex-start;
+}
+.DetailsDrink {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 7rem;
+    margin-block: 5rem;
+}
+.DetailsDrink > * {
+    justify-content: flex-start;
+}
+.EditDrink {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 7rem;
+    margin-block: 5rem;
+}
+.EditDrink > * {
+   justify-content: flex-start;
+}
+.IndexDrink {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 7rem;
+    margin-block: 5rem;
+}
+.IndexDrink > * {
+    justify-content: flex-start;
+}
+/*********************************************
+    styles the view from the pizza crud
+*********************************************/
+.createPizza {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 7rem;
+    margin-block: 5rem;
+}
+
+.createPizza > * {
+    justify-content: flex-start;
+}
+
+.DeletePizza {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 7rem;
+    margin-block: 5rem;
+}
+
+.DeletePizza > * {
+     justify-content: flex-start;
+}
+
+.DetailsPizza {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 7rem;
+    margin-block: 5rem;
+}
+
+.DetailsPizza > * {
+    justify-content: flex-start;
+}
+
+.EditPizza {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 7rem;
+    margin-block: 5rem;
+}
+
+.EditPizza > * {
+    justify-content: flex-start;
+}
+
+.IndexPizza {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 7rem;
+    margin-block: 5rem;
+}
+.IndexPizza > * {
+    justify-content: flex-start;
+}
+/*******************************************
+     styles the view from the price crud
+********************************************/
+.createPrice {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 7rem;
+    margin-block: 5rem;
+}
+.createPrice > * {
+    justify-content: flex-start;
+}
+.DeletePrice {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 7rem;
+    margin-block: 5rem;
+}
+.DeletePrice > * {
+    justify-content: flex-start;
+}
+.DetailsPrice {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 7rem;
+    margin-block: 5rem;
+}
+.DetailsPrice > * {
+     justify-content: flex-start;
+}
+.EditPrice {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 7rem;
+    margin-block: 5rem;
+}
+.EditPrice > * {
+   justify-content: flex-start;
+}
+.IndexPrice {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 7rem;
+    margin-block: 5rem;
+}
+.IndexPrice > * {
+    justify-content: flex-start;
+
+}
+/*******************************************
+     styles the view from the topping crud
+********************************************/
+.createTopping {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 7rem;
+    margin-block: 5rem;
+}
+.createTopping > * {
+        justify-content: flex-start;
+}
+.DeleteTopping {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 7rem;
+    margin-block: 5rem;
+}
+.DeleteTopping > * {
+    justify-content: flex-start;
+}
+.DetailsTopping {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 7rem;
+    margin-block: 5rem;
+}
+.DetailsTopping > * {
+    justify-content: flex-start;
+}
+.EditTopping {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 7rem;
+    margin-block: 5rem;
+}
+.EditTopping > * {
+    justify-content: flex-start;
+}
+.IndexTopping {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 7rem;
+    margin-block: 5rem;
+}
+.IndexTopping > * {
+   justify-content: flex-start;
 }

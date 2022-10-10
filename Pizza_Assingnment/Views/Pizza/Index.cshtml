@@ -3,87 +3,89 @@
 @{
     ViewData["Title"] = "Index";
 }
+<section class="IndexPizza">
+    <h1>Index</h1>
 
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Id)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Tomato_Sauce)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Cheese)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Topping_1)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Topping_2)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Topping_3)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Topping_4)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Topping_5)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Price_id)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Tomato_Sauce)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cheese)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Topping_1)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Topping_2)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Topping_3)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Topping_4)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Topping_5)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price_id)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-                @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-                @Html.ActionLink("Delete", "Delete", new { id=item.Id })
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Tomato_Sauce)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Cheese)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Topping_1)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Topping_2)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Topping_3)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Topping_4)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Topping_5)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Price_id)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Tomato_Sauce)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Cheese)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Topping_1)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Topping_2)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Topping_3)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Topping_4)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Topping_5)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Price_id)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+                        @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+                        @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</section>
