@@ -361,9 +361,8 @@ body {
     color: #FFF;
     margin-bottom: 10px;
 }
-.contactBoxInfo
-a,
-p {
+.contactBoxInfo a,
+.contactBoxInfo p {
     font-size: 1.5rem;
 }
 
@@ -382,6 +381,57 @@ textarea {
     border-radius: 25px;
     align-self: center;
 }
+
+/* MenuSection */
+.MenuSection {
+    margin-inline: 7rem;
+    margin-block: 3rem;
+    min-height: 50vh;
+    padding: 1rem;
+}
+
+.MenuSection .MenuOption {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-block: 2rem;
+}
+
+.MenuSection .MenuOption div {
+    display: flex;
+    gap: 1rem;
+}
+
+.MenuSection .MenuOption div a {
+    padding: .5rem 1.5rem;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    border-radius: 5px;
+    color: #000;
+}
+
+.MenuSection .MenuOption input {
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid;
+    padding-inline: 0.5rem;
+}
+
+.MenuSection .MenuOption input:focus {
+    border-bottom: 2px solid #5C8F22;
+}
+
+.MenuSection .MenuOption div .active {
+    background-color: #5C8F22;
+    color: #fff;
+}
+
+.MenuSection .MenuOption div a:hover {
+    text-decoration: none;
+    background-color: #7cbf2f;
+    color: #fff;
+}
+
 /****************************************
     styles the view from the item crud
 *****************************************/
