@@ -3,18 +3,22 @@
 
 // Write your JavaScript code.
 
+// Function to search in table and filter table
 function searchFunction() {
-    const trs = document.querySelectorAll('#table tr:not(.header)')
-    const filter = document.querySelector('#searchInput').value
-    const regex = new RegExp(filter, 'i')
-    const isFoundInTds = td => regex.test(td.innerHTML)
+    const trs = document.querySelectorAll('#table tr:not(.header)') // Selecting all tr inside my table with an id table and the tr that does not have the class header
+    const filter = document.querySelector('#searchInput').value // The input value, that is filter after
+    const regex = new RegExp(filter, 'i') // regex that looks at the characters in the input value
+    const isFoundInTds = td => regex.test(td.innerHTML) // Returns a boolean value that indicates whether or not a pattern exists in a searched string
     const isFound = childrenArr => childrenArr.some(isFoundInTds)
+
+    // An Arrow function that display the row if one of the column has the value in it or display none if it does not have the value
     const setTrStyleDisplay = ({ style, children }) => {
         style.display = isFound([
             ...children // <-- All columns
         ]) ? '' : 'none'
     }
 
+    // Runs a foreach for each tr in table
     trs.forEach(setTrStyleDisplay)
 }
 
@@ -40,6 +44,7 @@ nextBtn.addEventListener("click", (e) => {
     }
 });
 
+// Button click listener
 prevBtn.addEventListener("click", (e) => {
     prevSlide();
     if (auto) {
