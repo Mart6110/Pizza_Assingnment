@@ -14,5 +14,9 @@ namespace Pizza_Assingnment.Controllers
         {
             return View();
         }
+        public ActionResult AdminOverview()
+        {
+            return View();
+        }
     }
 }

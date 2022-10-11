@@ -204,7 +204,7 @@ body {
 
 .content h1 {
     font-family: 'Rubik', sans-serif !important;
-    margin-botom: 5px;
+    margin-bottom: 5px;
 }
 
 /* ================================================= 
@@ -381,4 +381,97 @@ textarea {
     padding: 1rem 2rem;
     border-radius: 25px;
     align-self: center;
+}
+/****************************************
+    styles the view from the item crud
+*****************************************/
+.createItem {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 7rem;
+    margin-block: 5rem;
+}
+    .createItem > * {
+        justify-content: flex-start;
+    }
+.DeleteItem {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 7rem;
+    margin-block: 5rem;
+}
+    .DeleteItem > * {
+        justify-content: flex-start;
+    }
+.DetailsItem {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 7rem;
+    margin-block: 5rem;
+}
+    .DetailsItem > * {
+        justify-content: flex-start;
+    }
+.EditItem {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 7rem;
+    margin-block: 5rem;
+}
+    .EditItem > * {
+        justify-content: flex-start;
+    }
+.IndexItem {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 7rem;
+    margin-block: 5rem;
+}
+    .IndexItem > * {
+        justify-content: flex-start;
+    }
+
+.Overview {
+    margin-inline: 7rem;
+    margin-block: 5rem;
+}
+
+.Overview .view {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+}
+
+.Overview .view .link {
+    position: relative;
+    height: 30vh;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.5s all ease-in-out;
+}
+
+.Overview .view .link img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.Overview .view a {
+    text-decoration: none;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+}
+
+.Overview .view a:hover .link {
+    transform: scale(1.5);
+}
+
+.Overview .view .link p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
 }
