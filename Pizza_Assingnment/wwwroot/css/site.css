@@ -361,9 +361,8 @@ body {
     color: #FFF;
     margin-bottom: 10px;
 }
-.contactBoxInfo
-a,
-p {
+.contactBoxInfo a,
+.contactBoxInfo p {
     font-size: 1.5rem;
 }
 
@@ -420,10 +419,36 @@ textarea {
     border-top: none;
 }
 
-
 /* MenuSection */
 .MenuSection {
     margin-inline: 7rem;
     margin-block: 3rem;
     min-height: 50vh;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    padding: 1rem;
+}
+
+.MenuSection .MenuOption {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-block: 2rem;
+}
+
+.MenuSection .MenuOption a {
+    padding: .5rem 1.5rem;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    border-radius: 5px;
+    color: #000;
+}
+
+.MenuSection .MenuOption .active {
+    background-color: #5C8F22;
+    color: #fff;
+}
+
+.MenuSection .MenuOption a:hover {
+    text-decoration: none;
+    background-color: #7cbf2f;
+    color: #fff;
 }
