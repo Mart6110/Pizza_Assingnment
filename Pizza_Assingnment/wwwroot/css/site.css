@@ -324,22 +324,49 @@ body {
     width: 100%;
 }
 
+.contactBoxForm form input {
+    margin-block: 1rem;
+    padding: .5rem;
+    border: 0;
+    border-bottom: 1px solid;
+}
+.contactBoxForm form input:focus {
+    border-bottom: 1px solid #FBCB7B;
+}
+
+.contactBoxForm form input:focus-visible {
+    outline: 0;
+}
+
+.contactBoxForm form button {
+    padding: .5rem 1rem;
+}
+
 .contactBoxInfo {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     color: #FFFFFF;
     background-color: #FBCB7B;
     position: absolute;
-    top: 40%;
-    left: 32%;
-    transform: translate(-40%, -32%);
-    padding: 8rem;
+    top: 50%;
+    left: 30%;
+    height: 45vh;
+    width: 20vw;
+    transform: translate(-30%, -50%);
+    padding: 2rem;
     box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
 }
 .contactBoxInfo a{
     color: #FFF;
     margin-bottom: 10px;
 }
+.contactBoxInfo
+a,
+p {
+    font-size: 1.5rem;
+}
+
 textarea {
     resize: none;
     margin-bottom: 15px;
