@@ -8,24 +8,28 @@
     <h1>Menu - Drikkevare</h1>
 
     <div class="MenuOption">
-        <a asp-area="" asp-controller="PizzaMenu" asp-action="Index">Pizza</a>
-        <a class="active" asp-area="" asp-controller="DrinkMenu" asp-action="Index">Drikkevare</a>
+        <div>
+            <a asp-area="" asp-controller="PizzaMenu" asp-action="Index">Pizza</a>
+            <a class="active" asp-area="" asp-controller="DrinkMenu" asp-action="Index">Drikkevare</a>
+        </div>
+        <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Søg" />
     </div>
 
-<table class="table">
+
+<table class="table" id="table">
     <thead>
-        <tr>
+        <tr class="header">
             <th>
                 Number
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Name)
+                Navn
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Size)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Price)
+                Priser
             </th>
             <th></th>
         </tr>
@@ -40,7 +44,7 @@
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Size)
+                @Html.DisplayFor(modelItem => item.Size) cl
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Price)

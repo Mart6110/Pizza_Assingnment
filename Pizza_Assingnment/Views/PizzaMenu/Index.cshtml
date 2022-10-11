@@ -8,45 +8,48 @@
     <h1>Menu - Pizza</h1>
 
     <div class="MenuOption">
-        <a class="active" asp-area="" asp-controller="PizzaMenu" asp-action="Index">Pizza</a>
-        <a asp-area="" asp-controller="DrinkMenu" asp-action="Index">Drikkevare</a>
+        <div>
+            <a class="active" asp-area="" asp-controller="PizzaMenu" asp-action="Index">Pizza</a>
+            <a asp-area="" asp-controller="DrinkMenu" asp-action="Index">Drikkevare</a>
+        </div>
+        <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Søg" />
     </div>
 
-<table class="table">
+<table class="table" id="table">
     <thead>
-        <tr>
+        <tr class="header">
             <th>
                 Number
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Name)
+                Navn
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Toppings)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Price)
+                Priser
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Toppings)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-        </tr>
-}
-    </tbody>
+        @foreach (var item in Model) {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Toppings)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Price)
+                    </td>
+                </tr>
+        }
+        </tbody>
 </table>
 </section>
