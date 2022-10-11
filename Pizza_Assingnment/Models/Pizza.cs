@@ -15,15 +15,10 @@ namespace Pizza_Assingnment.Models
 		public byte Tomato_Sauce { get; set; }
 		[Required]
 		public byte Cheese { get; set; }
-		[Required]
 		public string Topping_1 { get; set; }
-		[Required]
 		public string Topping_2 { get; set; }
-		[Required]
 		public string Topping_3 { get; set; }
-		[Required]
 		public string Topping_4 { get; set; }
-		[Required]
 		public string Topping_5 { get; set; }
 		[Required]
 		public int Price_id { get; set; }

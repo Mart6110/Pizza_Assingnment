@@ -73,3 +73,21 @@ const prevSlide = () => {
 if (auto) {
     slidesInterval = setInterval(nextSlide, intervalTime);
 }
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultMenu").click();
+
+// Menu Tabs
+function openMenu(evt, MenuName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(MenuName).style.display = "block";
+    evt.currentTarget.className += " active";
+}

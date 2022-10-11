@@ -28,6 +28,11 @@ namespace Pizza_Assingnment.Controllers
             return View();
         }
 
+        public IActionResult Menu()
+        {
+            return View();
+        }
+
         public IActionResult Kontakt()
         {
             return View();
