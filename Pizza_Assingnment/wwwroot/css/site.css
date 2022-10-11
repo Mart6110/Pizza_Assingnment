@@ -324,22 +324,49 @@ body {
     width: 100%;
 }
 
+.contactBoxForm form input {
+    margin-block: 1rem;
+    padding: .5rem;
+    border: 0;
+    border-bottom: 1px solid;
+}
+.contactBoxForm form input:focus {
+    border-bottom: 1px solid #FBCB7B;
+}
+
+.contactBoxForm form input:focus-visible {
+    outline: 0;
+}
+
+.contactBoxForm form button {
+    padding: .5rem 1rem;
+}
+
 .contactBoxInfo {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     color: #FFFFFF;
     background-color: #FBCB7B;
     position: absolute;
-    top: 40%;
-    left: 32%;
-    transform: translate(-40%, -32%);
-    padding: 8rem;
+    top: 50%;
+    left: 30%;
+    height: 45vh;
+    width: 20vw;
+    transform: translate(-30%, -50%);
+    padding: 2rem;
     box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
 }
 .contactBoxInfo a{
     color: #FFF;
     margin-bottom: 10px;
 }
+.contactBoxInfo
+a,
+p {
+    font-size: 1.5rem;
+}
+
 textarea {
     resize: none;
     margin-bottom: 15px;
@@ -356,203 +383,50 @@ textarea {
     align-self: center;
 }
 /****************************************
-    styles the view from the drink crud
+    styles the view from the item crud
 *****************************************/
-.createDrink {
-    display: flex;   
-    flex-direction: column;
-    margin-inline: 7rem;
-    margin-block: 5rem;
-}
-.createDrink > * { 
-  justify-content: flex-start;
-}
-.DeleteDrink {
+.createItem {
     display: flex;
     flex-direction: column;
     margin-inline: 7rem;
     margin-block: 5rem;
 }
-.DeleteDrink > * {
-    justify-content: flex-start;
-}
-.DetailsDrink {
-    display: flex;
-    flex-direction: column;
-    margin-inline: 7rem;
-    margin-block: 5rem;
-}
-.DetailsDrink > * {
-    justify-content: flex-start;
-}
-.EditDrink {
-    display: flex;
-    flex-direction: column;
-    margin-inline: 7rem;
-    margin-block: 5rem;
-}
-.EditDrink > * {
-   justify-content: flex-start;
-}
-.IndexDrink {
-    display: flex;
-    flex-direction: column;
-    margin-inline: 7rem;
-    margin-block: 5rem;
-}
-.IndexDrink > * {
-    justify-content: flex-start;
-}
-/*********************************************
-    styles the view from the pizza crud
-*********************************************/
-.createPizza {
-    display: flex;
-    flex-direction: column;
-    margin-inline: 7rem;
-    margin-block: 5rem;
-}
-
-.createPizza > * {
-    justify-content: flex-start;
-}
-
-.DeletePizza {
-    display: flex;
-    flex-direction: column;
-    margin-inline: 7rem;
-    margin-block: 5rem;
-}
-
-.DeletePizza > * {
-     justify-content: flex-start;
-}
-
-.DetailsPizza {
-    display: flex;
-    flex-direction: column;
-    margin-inline: 7rem;
-    margin-block: 5rem;
-}
-
-.DetailsPizza > * {
-    justify-content: flex-start;
-}
-
-.EditPizza {
-    display: flex;
-    flex-direction: column;
-    margin-inline: 7rem;
-    margin-block: 5rem;
-}
-
-.EditPizza > * {
-    justify-content: flex-start;
-}
-
-.IndexPizza {
-    display: flex;
-    flex-direction: column;
-    margin-inline: 7rem;
-    margin-block: 5rem;
-}
-.IndexPizza > * {
-    justify-content: flex-start;
-}
-/*******************************************
-     styles the view from the price crud
-********************************************/
-.createPrice {
-    display: flex;
-    flex-direction: column;
-    margin-inline: 7rem;
-    margin-block: 5rem;
-}
-.createPrice > * {
-    justify-content: flex-start;
-}
-.DeletePrice {
-    display: flex;
-    flex-direction: column;
-    margin-inline: 7rem;
-    margin-block: 5rem;
-}
-.DeletePrice > * {
-    justify-content: flex-start;
-}
-.DetailsPrice {
-    display: flex;
-    flex-direction: column;
-    margin-inline: 7rem;
-    margin-block: 5rem;
-}
-.DetailsPrice > * {
-     justify-content: flex-start;
-}
-.EditPrice {
-    display: flex;
-    flex-direction: column;
-    margin-inline: 7rem;
-    margin-block: 5rem;
-}
-.EditPrice > * {
-   justify-content: flex-start;
-}
-.IndexPrice {
-    display: flex;
-    flex-direction: column;
-    margin-inline: 7rem;
-    margin-block: 5rem;
-}
-.IndexPrice > * {
-    justify-content: flex-start;
-
-}
-/*******************************************
-     styles the view from the topping crud
-********************************************/
-.createTopping {
-    display: flex;
-    flex-direction: column;
-    margin-inline: 7rem;
-    margin-block: 5rem;
-}
-.createTopping > * {
+    .createItem > * {
         justify-content: flex-start;
-}
-.DeleteTopping {
+    }
+.DeleteItem {
     display: flex;
     flex-direction: column;
     margin-inline: 7rem;
     margin-block: 5rem;
 }
-.DeleteTopping > * {
-    justify-content: flex-start;
-}
-.DetailsTopping {
+    .DeleteItem > * {
+        justify-content: flex-start;
+    }
+.DetailsItem {
     display: flex;
     flex-direction: column;
     margin-inline: 7rem;
     margin-block: 5rem;
 }
-.DetailsTopping > * {
-    justify-content: flex-start;
-}
-.EditTopping {
+    .DetailsItem > * {
+        justify-content: flex-start;
+    }
+.EditItem {
     display: flex;
     flex-direction: column;
     margin-inline: 7rem;
     margin-block: 5rem;
 }
-.EditTopping > * {
-    justify-content: flex-start;
-}
-.IndexTopping {
+    .EditItem > * {
+        justify-content: flex-start;
+    }
+.IndexItem {
     display: flex;
     flex-direction: column;
     margin-inline: 7rem;
     margin-block: 5rem;
 }
-.IndexTopping > * {
-   justify-content: flex-start;
-}
+    .IndexItem > * {
+        justify-content: flex-start;
+    }
