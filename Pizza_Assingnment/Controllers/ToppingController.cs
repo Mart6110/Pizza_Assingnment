@@ -14,31 +14,35 @@ namespace Pizza_Assingnment.Controllers
             toppingsDataAccessLayer = new ToppingsDataAccessLayer();
         }
 
-        // GET: ToppingController1
+        // GET: ToppingController
         public ActionResult Index()
         {
+            // Getting all the toppings
             IEnumerable<Toppings> toppings = toppingsDataAccessLayer.GetAllTopping();
             return View(toppings);
         }
 
-        // GET: ToppingController1/Details/5
+        // GET: ToppingController/Details/5
         public ActionResult Details(int Id)
         {
+            // Getting a specific toppings detials
             Toppings toppings = toppingsDataAccessLayer.GetToppingsData(Id);
             return View(toppings);
         }
 
-        // GET: ToppingController1/Create
+        // GET: ToppingController/Create
         public ActionResult Create()
         {
+            // Getting a view for creating a new topping
             return View();
         }
 
-        // POST: ToppingController1/Create
+        // POST: ToppingController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(Toppings toppings)
         {
+            // A try/catch that POST the input value 
             try
             {
                 toppingsDataAccessLayer.AddTopping(toppings);
@@ -51,14 +55,14 @@ namespace Pizza_Assingnment.Controllers
             }
         }
 
-        // GET: ToppingController1/Edit/5
+        // GET: ToppingController/Edit/5
         public ActionResult Edit(int id)
         {
             Toppings toppings = toppingsDataAccessLayer.GetToppingsData(id);
             return View(toppings);
         }
 
-        // POST: ToppingController1/Edit/5
+        // POST: ToppingController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(Toppings toppings)
@@ -74,14 +78,14 @@ namespace Pizza_Assingnment.Controllers
             }
         }
 
-        // GET: ToppingController1/Delete/5
+        // GET: ToppingController/Delete/5
         public ActionResult Delete(int id)
         {
             Toppings toppings = toppingsDataAccessLayer.GetToppingsData(id);
             return View(toppings);
         }
 
-        // POST: ToppingController1/Delete/5
+        // POST: ToppingController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(Toppings toppings)
