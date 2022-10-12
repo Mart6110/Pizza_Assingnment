@@ -7,8 +7,10 @@ using System.Threading.Tasks;
 
 namespace Pizza_Assingnment.Models
 {
+    //public class named Drink
     public class Drink
     {
+        //variables with get and set
         public int Id { get; set; }
         [Required]
         public string Name { get; set; }
